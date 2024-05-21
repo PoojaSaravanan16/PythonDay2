@@ -14,7 +14,7 @@ age = int(input("Enter the age of the driver: "))
 if is_married:
     print("The driver is eligible for insurance.")
 elif not is_married and is_male and age > 30:
-    print("The driver is eligible for insurance.")
+    print("The driver is eligible for insurance.
 elif not is_married and not is_male and age > 25:
     print("The driver is eligible for insurance.")
 else:
@@ -31,5 +31,147 @@ elif num2 >= num1 and num2 >= num3:
 else:
     largest = num3
 print("The largest number is:", largest)
+
+3.1.4:
+n = int(input("Enter an integer with more than two digits: "))
+last_two_digits = n % 100
+print("The last two digits of the number are:", last_two_digits)
+
+3.2.1:
+# Input the lengths of the four sides
+a = float(input("Enter the length of side a: "))
+b = float(input("Enter the length of side b: "))
+c = float(input("Enter the length of side c: "))
+d = float(input("Enter the length of side d: "))
+if a==b and c==d or a==c and b==d or a==d and  b==c:
+    print("Yes, a rectangle can be formed.")
+else:
+    print("No, a rectangle cannot be formed.")
+
+3.2.2:
+a = float(input("Enter the length of side a: "))
+b = float(input("Enter the length of side b: "))
+c = float(input("Enter the length of side c: "))
+if a + b > c and a + c > b and b + c > a:
+    print("Yes, the given sides form a valid triangle.")
+else:
+    print("No, the given sides do not form a valid triangle.")
+
+3.2.3:
+# Input the current hour
+current = int(input("Enter the current hour (in 24-hour format): "))
+for hour in range(current, current + 2):
+    hour_angle = (hour % 12) * 3
+    for minute in range(60):
+        minute_angle = minute * 6
+        if abs(hour_angle - minute_angle) < 0.001:
+            print("The hour and minute hands coincide at {}:{}.".format(hour, minute))
+3.2.4:
+m1=int(input("Mark in subject1: \n"))
+m2=int(input("Mark in subject2: \n"))
+m3=int(input("Mark in subject3: \n"))
+average=(m1+m2+m3)/3
+if average>=90:
+    print(":) :) Grade A :) :)")
+elif average>=80 and average<90:
+    print("Grade B")
+elif average>=70 and average<80:
+    print("Grade C")
+elif average>=60 and average<70:
+    print("Grade D")
+elif average>=50 and average<60:
+    print("Grade E")
+else:
+    print(":( :( Grade F :( :(")
+    
+3.3.1:
+print("1 – addition")
+print("2 – subtraction")
+print("3 – multiplication")
+print("4 – division")
+print("5 – modulus")
+print("6 – average")
+print("7 – power")
+
+choice = int(input("Enter your choice: "))
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+
+if choice == 1:
+    result = num1 + num2
+    print("Result:", result)
+elif choice == 2:
+    result = num1 - num2
+    print("Result:", result)
+elif choice == 3:
+    result = num1 * num2
+    print("Result:", result)
+elif choice == 4:
+    if num2 != 0:
+        result = num1 / num2
+        print("Result:", result)
+    else:
+        print("Error: Division by zero is not allowed.")
+elif choice == 5:
+    if num2 != 0:
+        result = num1 % num2
+        print("Result:", result)
+    else:
+        print("Error: Modulus by zero is not allowed.")
+elif choice == 6:
+    result = (num1 + num2) / 2
+    print("Result:", result)
+elif choice == 7:
+    result = num1 ** num2
+    print("Result:", result)
+else:
+    print("Error: Invalid choice.")
+
+3.3.2:
+num = int(input("Enter a number: "))
+perfectsquare = False
+for i in range(int(num ** 0.5) + 1):
+    if i * i == num:
+        perfectsquare = True
+        break
+if perfectsquare:
+    print(num, "is a perfect square.")
+else:
+    print(num, "is not a perfect square.")
+
+3.3.3:
+days_late = int(input("Enter how many days late you are: "))
+
+if days_late <= 0:
+    print("No fine")
+elif days_late <= 5:
+    fine = days_late * 0.5
+    print(f"Your fine: Rs.{fine:.2f}")
+elif days_late <= 10:
+    fine = (days_late - 5) * 1 + 2.5
+    print(f"Your fine: Rs.{fine:.2f}")
+elif days_late <= 30:
+    fine = (days_late - 10) * 5 + 7.5
+    print(f"Your fine: Rs.{fine:.2f}")
+else:
+    print("Your membership has been cancelled")
+
+
+3.3.4:
+unit=int(input())
+if unit<=199:
+    bill=unit*1.20
+elif unit>=200 and unit<400:
+    bill=unit*1.50
+elif unit>=400 and unit<600:
+    bill=unit*1.80
+elif  unit>=600:
+    bill=unit*2.00
+if bill>400:
+    bill+=bill*0.15
+if bill<100:
+    bill=100
+print("\nThe bill amount is: ",bill)
+
 
 
