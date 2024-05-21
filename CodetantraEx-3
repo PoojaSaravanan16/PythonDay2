@@ -1,0 +1,35 @@
+3.1.1:
+s1=int(input("Side1 of triangle: \n"))
+s2=int(input("Side2 of triangle: \n"))
+s3=int(input("Side3 of triangle: \n"))
+if s1+s2>s3 and s1+s3>s2 and s3+s1>s2:
+    print("Triangle is valid")
+else:
+    print("Triangle is not valid")
+
+3.1.2:
+is_married = input("Is the driver married? (yes/no): ")
+is_male = input("Is the driver male? (yes/no): ")
+age = int(input("Enter the age of the driver: "))
+if is_married:
+    print("The driver is eligible for insurance.")
+elif not is_married and is_male and age > 30:
+    print("The driver is eligible for insurance.")
+elif not is_married and not is_male and age > 25:
+    print("The driver is eligible for insurance.")
+else:
+    print("The driver is not eligible for insurance.")
+
+3.1.3:
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+num3 = float(input("Enter the third number: "))
+if num1 >= num2 and num1 >= num3:
+    largest = num1
+elif num2 >= num1 and num2 >= num3:
+    largest = num2
+else:
+    largest = num3
+print("The largest number is:", largest)
+
+
