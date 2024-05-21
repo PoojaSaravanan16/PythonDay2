@@ -1,0 +1,92 @@
+1.Chef and Brain Speed:
+x,y = map(int,input().split())
+if(y>x):
+    print("YES")
+else:
+    print("NO")
+
+
+2.Alice and Marks:
+x,y = map(int,input().split())
+
+# write your code here
+if(x>=(2*y)):
+    print("YES")
+else:
+    print("NO")
+
+
+3.Oneful Pairs:
+a,b = map(int,input().split())
+c=a+b+(a*b)
+if(c==111):
+    print("YES")
+else:
+    print("NO")
+
+
+4.Rearrange Code:
+i = 1
+while i <= 10:
+    print(i)
+    i = i + 1
+
+5.Add Two Numbers:
+t = int(input())
+for i in range(0,t):
+    a,b = map(int,input().split())
+    c=a+b
+    print(c)
+
+6.Good Turn:
+t = int(input())
+for i in range(0,t):
+    x,y = map(int,input().split())
+    if(x+y>6):
+        print("Yes")
+    else:
+        print("No")
+
+7.Water Consumption:
+t = int(input())
+for i in range(0,t):
+    x =  int(input())
+    if(x>=2000):
+        print("Yes")
+    else:
+        print("No")
+
+8.Blackcells in chessboard:
+n=int(input())
+total=n*n
+print(total//2)
+
+9.Cyclic Quadrialteral:
+n=int(input())
+for i in range(n):
+    a,b,c,d=map(int,input().split())
+    if a+c == 180 and b+d == 180:
+        print("YES")
+    else:
+        print("NO")
+
+10.Pass or Fail:
+t=int(input())
+for i in range(t):
+    x,y,z=map(int,input().split())
+    if (y*3-(x-y)>=z):
+        print("PASS")
+    else:
+        print("FAIL")
+
+11.Age Limit:
+t = int(input())           
+for i in range(t):
+    #Accept 3 integers inputs.
+    X, Y, A = map(int,input().split())
+    if A >= X and A < Y:
+        #Text output has to be printed within ''
+        print('YES')        
+    else:
+        print('NO')
+    
